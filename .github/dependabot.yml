@@ -4,6 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    labels:
+      - "ok-to-test"
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
@@ -16,7 +18,11 @@ updates:
       golang-x-deps:
         patterns:
           - "golang.org/x/*"
+    labels:
+      - "ok-to-test"
   - package-exosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
+    labels:    
+      - "ok-to-test"
